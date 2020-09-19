@@ -1,0 +1,27 @@
+@charset "utf-8";
+html {font-size: 10px;}
+
+/* reset */
+body {margin: 0;}
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, table {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700;}
+main {display: block;}
+a {color: inherit; text-decoration: inherit;} 
+a img {border: none;}
+img {vertical-align: middle;}
+li {list-style: none;}
+/* address, em, i, cite {font-style: normal;} */
+/* table {border-collapse: collapse;} */
+table caption {overflow: hidden; width: 0; height: 0;} 
+i.fas, i.far, i.fab {vertical-align: middle; display: inline-block;}
+i.fas span, i.far span, i.fab span {position: absolute; overflow: hidden; text-indent: -999px;}
+
+.mobile {display: none !important;}
+br.only-w {content: ' ';}
+br.only-w:after {content: '\00a0';} 
+div.hidden {position: absolute; left: -9999px;}
+
+
+/* common */
+body {position: relative; font-family: "Inter", Helvetica, sans-serif; font-weight: 400;}
+#wrapper {min-width: 1024px; overflow: hidden;}

@@ -1,0 +1,115 @@
+@charset "utf-8";
+.black {background-color: black; border-color: #fff; color: #FFF;}
+html {overflow: hidden;}
+div.introduce {position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; z-index: 100000000;  background: #fff;}
+div.introduce #type {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 4.5rem; font-weight: bold; box-sizing: border-box; line-height: 2;}
+div.introduce a.skip {position: absolute; bottom: 50px; right: 50px; padding-right: 50px ; font-size: 2rem; font-weight: bold; cursor: pointer; }
+div.introduce a.skip img {position: absolute; right: 0;  width: 40px; animation: move 1s infinite alternate;}
+
+#skip-nav {position: fixed; width: 100%; line-height: 30px; left:0; top: -30px;  background: #999999; background: rgba(0, 0, 0, 0.6); color: #fff; font-size: 1.5rem; text-align: center; z-index: 10000; transition: top 0.3s;}
+#skip-nav:focus {top:0;}
+
+@keyframes move {  
+    from {transform: translateX(0);}
+    to {transform: translateX(10px);}
+}
+
+header nav {width: 100%; height: 70px; overflow: hidden; padding: 20px; box-sizing: border-box; background: #fff; z-index: 100; border-bottom: 1px solid black;} 
+/* 
+.menu {display: inline-block; cursor: pointer; position: relative; width: 30px;height: 30px; transform: rotate(-90deg);} 
+.menu .bar {width: 30px; height: 2px; background: #000; position: absolute; top: 50%; left: 0; transition: all 0.5s ease; transform-origin: 50%;}
+.menu .bar:nth-child(1) {transform: rotate(45deg) translateX(-25%) scaleX(0.55);}
+.menu .bar:nth-child(2) {transform: rotate(-45deg) translateX(25%) scaleX(0.55);}
+
+.menu.close .bar:nth-child(1) {transform: rotate(45deg) translateX(0) scaleX(1);}
+.menu.close .bar:nth-child(2) {transform: rotate(-45deg) translateX(0) scaleX(1);} 
+
+.menu .bar:nth-child(1) {transform: rotate(45deg) translateX(-25%) scaleX(0.55);}
+.menu .bar:nth-child(2) {transform: rotate(-45deg) translateX(25%) scaleX(0.55);}
+
+.menu.close .bar:nth-child(1) {transform: rotate(45deg) translateX(0) scaleX(1);}
+.menu.close .bar:nth-child(2) {transform: rotate(-45deg) translateX(0) scaleX(1);} 
+
+header nav a.menu.close span {opacity: 0; transition: all 0.3s;}
+header nav a.menu.close:before {opacity: 1; left: 50%; transform: rotate(45deg); transition: all 0.3s;}
+header nav a.menu.close:after {opacity: 1; left: 50%; transform: rotate(-45deg); transition: all 0.3s;}
+
+header nav > ul {position: absolute; top: 70px; left: -50%; width: 100%; height: 70px; transition: all 0.5s;}
+header nav > ul.on {position: absolute; left: 0; top: 0; width: 100%; height: calc(100vh - 140px); display: block; margin-top: 70px; overflow: hidden; transition: all 0.5s;}
+/* header nav ul.on:before {content:''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 10;} */
+header nav > ul > li {position: absolute; top: 0; height: 100%; transition: all 0.5s; text-align: right; box-sizing: border-box; background-color: #fff; border-right: 1px solid rgba(0,0,0,0.2); color: #000; overflow: scroll;}
+header nav > ul > li > a {display: inline-block; font-size: 1.5vw; /* height: calc(100vh - 140px); */ padding: 1em; box-sizing: border-box; font-weight: bold; color: rgba(0,0,0,0.8);}
+
+/* recent works */
+header nav > ul > li:nth-child(1) {right: 92%; top: 0; width: 84%; z-index: 1000;}
+header nav ul li:nth-child(1).on {right: 16% !important;}
+header nav ul li ul.site {position: relative; left: 0; top: 0; width: 80%; height: 100%; background: #fff; margin: 0 auto; }
+header nav ul li ul.site li {float: left; width: calc(50% - 30px); max-width: 450px; height: 240px; border: 1px solid black; box-sizing: border-box; }
+
+/* header nav ul li ul.site.small li {float: left; width: calc(40% - 30px); max-width: 450px; height: 220px; border: 1px solid black; box-sizing: border-box; } */
+header nav ul li ul.site li:nth-child(-n + 3){margin: 0 15px;}
+header nav ul li ul.site li:nth-child(n + 3){ margin: 30px 15px;}
+header nav ul li ul.site li a {position: relative; display: block; width: 100%; height: 100%; font-size: 3rem; color: #fff;  height: 100%; background-size: cover; background-repeat: no-repeat; background-position: top center; text-align: center; }
+header nav ul li ul.site li a::before {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+header nav ul li ul.site li:nth-child(1) a {background-image: url(../img/bite.gif);}
+header nav ul li ul.site li:nth-child(2) a {background-image: url(../img/seoul284.gif);}
+header nav ul li ul.site li:nth-child(3) a {background-image: url(../img/ghm.jpg);}
+header nav ul li ul.site li:nth-child(4) a {background-image: url(../img/jiyoung-gallery.png);}
+
+
+header nav ul li ul.site li a p {position: absolute; left: 50%; top: 50%; color: #fff; transform: translate(-50%, -50%); width: 100%; opacity: 0; transition: all 0.5s; font-weight: bold; text-align: center;}
+header nav ul li ul.site li a p span {font-size: 1.5rem; font-weight: bold; display: block;}
+/* header nav ul li ul.site li:hover a div {background: rgba(0,0,0,0.5)} */
+/* header nav ul li ul.site li:hover a::before p {opacity: 1;} */
+/* header nav ul li ul.site li:hover a div p span {opacity: 1; transition: all 0.5s;} */
+
+/* skillset */
+header nav > ul > li:nth-child(2) {width: 92%; right: 84%; z-index: 100;}
+header nav ul li:nth-child(2).on {right: 8% !important;}
+header nav ul li:nth-child(2) ul.skill {position: relative; left: 0; top: 0;  width: 100%; height: 100%; padding:  0 24%; box-sizing: border-box;}
+header nav ul li:nth-child(2) ul.skill li {display: inline-block; text-align: left; font-size: 3rem; font-weight: bold;}
+
+/* contact */
+header nav > ul > li:nth-child(3) {width: 100%; right: 76%; z-index: 50;} 
+header nav ul li:nth-child(3).on {right: 0 !important; transition: all 0.3s;} 
+
+header nav ul li:nth-child(3) .name-card {position: absolute; left: 0; top:100px; width: 100%; padding: 0 24%; box-sizing: border-box; text-align: left;}
+header nav ul li:nth-child(3) .name-card p {font-size: 3rem; font-weight: bold; line-height: 2;}
+header nav ul li:nth-child(3) .name-card p span {font: 3rem 'Merriweather', serif;}
+header nav ul li:nth-child(3) .name-card ul::before {content:''; position: absolute; top: -10px; left: 0; width: 20px; height: 4px; background: #000;}
+header nav ul li:nth-child(3) .name-card ul {position: relative; margin-top: 5em;}
+header nav ul li:nth-child(3) .name-card ul li {font-size: 1.5rem; font-weight: bold; line-height: 1.5;}
+
+header nav h1 {position: absolute; display: inline-block;}
+header nav h1 a {font-size: 30px; line-height: 30px; margin-left: 30px; font-family: 'Merriweather', serif; font-weight: bold;}
+header nav a.lang {float: right; font-size: 20px; font-weight: bold;}
+
+/* main */
+main {position: relative; width: 100%; height: calc(100vh - 140px);}
+main p.control {position: absolute; width: 100%; top: 50%; right: 10px; z-index: 49;}
+main p.control a.prev {display: inline-block; position: absolute; left: 20px; width: 50px; height: 50px; line-height: 50px; border: 2px solid black; border-radius: 50%;}
+main p.control a.next {display: inline-block; position: absolute; right: 20px; width: 50px; height: 50px; line-height: 50px; border: 2px solid black; border-radius: 50%;}
+main p.control a.next:hover {background: #fff;}
+main p.control a.prev img {position: absolute; left: 10px; top: 15px; width: 60px; animation: move 1s infinite alternate-reverse;}
+main p.control a.next img {position: absolute; right: 20px; top: 15px; width: 60px; animation: move 1s infinite alternate;}
+
+/* main p.control a.next img::before:hover {content:''; background: #fff;} */
+
+ul.works {width: 100%; height: 100%;}
+
+ul.works li {position: relative; box-shadow: 10px 10px  10px rgba(0,0,0,0.3); transition: all 0.3s; border: 1px solid black; box-sizing: border-box;}
+ul.works li.slide1 {position: absolute; top: 50%; left: 48%; transform: translate(-50%, -50%); max-width: 1200px; width: 60vw; height: auto; z-index: 5;} 
+ul.works li.slide2 {position: absolute; top: 50%; left: 52%; transform: translate(-50%, -50%); max-width: 1200px; width: 57vw; height: auto; z-index: 4;}
+ul.works li.slide3 {position: absolute; top: 50%; left: 56%; transform: translate(-50%, -50%); max-width: 1200px; width: 54vw; height: auto; z-index: 3;}
+ul.works li.slide4 {position: absolute; top: 50%; left: 60%; transform: translate(-50%, -50%); max-width: 1200px; width: 51vw; height: auto; z-index: 2;}
+
+ul.works li a {display: block;}
+ul.works li a:before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); opacity: 0;}
+ul.works li:hover a:before { opacity: 1;}
+ul.works li a img {display: block; width: 100%; height: 100%;}
+ul.works li a p {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color:#fff; font-size: 4rem; font-weight: bold; opacity: 0; text-align: center;}
+ul.works li:hover a p {opacity: 1;}
+ul.works li a p span {font-size: 2rem;}
+
+footer {width: 100%; height: 70px; border-top: 1px solid black;}
+footer a {font-size: 15px; border-right: 1px solid black; line-height: 70px; padding: 20px;} */

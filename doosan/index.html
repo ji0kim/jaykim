@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    <link  href="css/style.css" rel="stylesheet" media = "screen and (min-width : 1081px)";>
+    <link  href="css/mobile-style.css" rel="stylesheet" media = "screen and (max-width : 1080px)";>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/ui_common.js"></script>
+    <script src="js/index.js"></script>
+    <title>두산인프라코어</title>
+</head>
+
+<body class="main">  
+    <a href="#main" id="skip-nav">메인 바로가기</a>
+    <header id="header">
+        <a class="logo" href="index.html"><img src="img/step1_logo_color.png" alt="두산로고"></a>
+        <nav class="gnb">
+            <a href="#" class="only-m search"><i class="fas fa-search"></i></a>
+            <a href="#" class="only-m close"><i class="fas fa-times"></i></a>
+            <ul>
+                <li data-menu="company">
+                    <a href="#">회사소개 <i class="fas fa-chevron-down only-m"></i></a>
+                    <ul>
+                        <li data-menu="greetings"><a href="company_greetings.html">인사말 </i></a></li>
+                        <li data-menu="vision"><a href="company_vision.html">비전</i></a></li>
+                        <!-- <li data-menu="history"><a href="company_history.html">역사</i></a></li> -->
+                        <li data-menu="brand"><a href="company_brand.html">브랜드 커뮤니케이션</i></a></li>
+                        <li data-menu="innovation"><a href="company_innovation.html">이노베이션</i></a></li>
+                        <li data-menu="news"><a href="company_news.html">뉴스 & 미디어</i></a></li>
+                    </ul>
+                </li>
+                <li data-menu="business">
+                    <a href="#">사업영역<i class="fas fa-chevron-down only-m"></i></a>
+                    <ul>
+                        <li><a href="#">건설기계</a></li>
+                        <li><a href="#">엔진</a></li>
+                    </ul>
+                </li>
+                <li data-menu="sustainability">
+                    <a href="#">지속가능경영<i class="fas fa-chevron-down only-m"></i></a>
+                    <ul>
+                        <li><a href="#">개요</a></li>
+                        <li><a href="#">윤리경영</a></li>
+                        <li><a href="#">동반성장</a></li>
+                        <li><a href="#">공정거래</a></li>
+                        <li><a href="#">EHS</a></li>
+                        <li><a href="#">사회공헌</a></li>
+                    </ul>
+                </li>
+                <li data-menu="invest">
+                    <a href="#">투자정보<i class="fas fa-chevron-down only-m"></i></a>
+                    <ul>
+                        <li><a href="#">거버넌스</a></li>
+                        <li><a href="#">IR정보</a></li>
+                        <li><a href="#">전자공고 / 공시</a></li>
+                    </ul>
+                </li>
+                <li data-menu="career">
+                    <a href="#">인재경영<i class="fas fa-chevron-down only-m"></i></a>
+                    <ul>
+                        <li><a href="#">두산의 인재</a></li>
+                        <li><a href="#">채용전형 안내</a></li>
+                        <li><a href="#">복리후생</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="lang-m only-m">
+                <li><a href="#">KR</a></li>
+                <li><a href="#">EN</a></li>
+                <li><a href="#">CN</a></li>
+            </ul>
+            <ul class="sns only-m">
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </nav>
+        <ul class="lang">
+            <li><i class="fas fa-globe"></i>한국어</li>
+            <li><a href="#">ENGLISH</a></li>
+            <li><a href="#">中文</a></li>
+        </ul>
+        <a href="#" class="menu only-m"><i class="fas fa-bars"></i></a>
+        <!-- <a href="#" class="menu only-m"><i class="fas fa-bars"></i></a> -->
+        <a href="#" class="search only-pc"><i class="fas fa-search"></i></a>
+        <form action="" class="search-form">
+            <input type="text" placeholder="여기에 검색어를 입력하세요.">
+            <a href="#"><img src="img/arrow.png" alt="검색확인"></a>
+            <a href="#" class="only-m close"><i class="fas fa-times"></i></a>
+        </form>
+    </header>
+    <main id="main">
+        <div id="main-video">
+            <ul class="video">
+                <li class="on">
+                    <video src="img/main-video1.mp4" type="video/mp4" muted="muted" id="vid1" poster="img/main-vid-poster1.jpg"></video>
+                    <div>
+                        <h1>Powered by<br>Innovation</h1>
+                        <p> 두산인프라코어는 미국 라스베이거스에서 열린 세계 최대 건설기계 전시회인 CONEXPO 2020에 참여해 최신 장비와 기술을 소개하였습니다.</p>
+                        <div class="more-hide-btn"><a href="#"><span>자세히보기</span><img src="img/arrow.png" alt="자세히보기"></a></div>
+                    </div>
+                </li>
+                <li>
+                    <video src="img/main-video2.mp4" type="video/mp4" muted="muted" id="vid2" poster="img/main-vid-poster2.jpg"></video>
+                    <div>
+                        <h1>Brand Activities</h1>
+                        <p>두산인프라코어는 전 세계 고객들의 행복한 내일을 위해 최고 품질의 제품으로 보다 나은 가치와 편의를 제공하겠습니다.</p>
+                        <div class="more-hide-btn"><a href="#"><span>자세히보기</span><img src="img/arrow.png" alt="자세히보기"></a></div>
+                    </div>
+                </li>
+                <li>
+                    <video src="img/main-video3.mp4" type="video/mp4" muted="muted" id="vid3" poster="img/main-vid-poster3.jpg"></video>
+                    <div>
+                        <h1>Delights for tomorrow</h1>
+                        <p>두산인프라코어는 끊임없는 혁신을 원동력으로 무한한 비즈니스 가능성을 만들어가고 있습니다.</p>
+                        <div class="more-hide-btn"><a href="#"><span>자세히보기</span><img src="img/arrow.png" alt="자세히보기"></a></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="indicator">
+                <ul>
+                    <li class="on"><a href="#">Powered by Innovations</a></li>
+                    <li><a href="#">Brand Activities</a></li>
+                    <li><a href="#">Delights for tomorrow</a></li>
+                </ul>
+                <a href="#" class="stop"><img src="img/stop.png" alt="멈춤"></a>
+                <a href="#" class="play"><img src="img/play.png" alt="재생"></a>
+                <span>Scroll Down<span></span></span>
+            </div>
+        </div>
+        <section class="business">
+                <h2>Our Business</h2>
+                <p>
+                    두산인프라코어는 건설기계, 엔진 및 각종 어태치먼트와 장비 등 모든 참여 사업분야에서 독보적 위상을 구축한 한국 최고의 기계회사이며,
+                    세계 최고 수준의 경쟁력을 바탕으로 인프라지원산업분야 글로벌 선도기업으로 비상하고 있는 회사입니다.
+                </p>
+                <div class="machine">
+                    <img src="img/our-business-1.jpg" alt="건설기계">
+                    <h3>건설 기계</h3>
+                    <ul>
+                        <li><a href="#" class="more">건설기계 소개<img src="img/arrow.png" alt="더보기"></a></li>
+                        <li><a href="#">공식 웹사이트 <i class="fas fa-external-link-alt"></i></a></li>
+                    </ul>
+                </div>
+                <div class="engine">
+                    <img src="img/our-business-2.jpg" alt="엔진">
+                    <h3>엔진</h3>
+                    <ul>
+                        <li><a href="#" class="more">엔진소개<img src="img/arrow.png" alt="더보기"></a></li>
+                        <li><a href="#">공식 웹사이트 <i class="fas fa-external-link-alt"></i></a></li>
+                    </ul>
+                </div>
+        </section>
+        <section id="img-slide">
+       <!-- <span></span><span></span> -->
+       <div></div>
+       <div></div>
+            <ul class="slide">
+                <li class="on">
+                    <img src="img/img-slide1.jpeg" alt="DoosanCONNECT™">
+                    <h2>5G Remote<br>Control Solution</h2>
+                    <div>
+                        <p>두산인프라코어는 LG유플러스와 함께 ‘Bauma 2019’ 전시회에서 유럽시장에 처음으로 5G 통신 기반 건설기계 원격제어 기술을 선보였습니다. 독일 뮌헨 전시장의 ‘5G 원격제어 스테이션 (관제센터)’에서 약 8,500km 떨어진 한국 인천의 굴착기를 원격으로 조종하는 데 성공했습니다.</p>
+                        <a href="#" class="more">더보기<img src="img/arrow-white.png" alt="더보기"></a>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/img-slide2.jpeg" alt="사회공헌활동 이미지">
+                    <h2>사회공헌 활동</h2>
+                    <div>
+                        <p>두산인프라코어의 사회공헌 활동은 '사람'과 '지역사회'에 대한 우리의 철학을 반영하고 있으며, 사내외 참여 기회를 확대하고 지역사회에 실질적으로 도움이 되는 사회공헌을 추구하고 있습니다.</p>
+                        <a href="#" class="more">더보기<img src="img/arrow-white.png" alt="더보기"></a>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/img-slide3.png" alt="DoosanCONNECT™">
+                    <h2>Doosan CONNECT™</h2>
+                    <div>
+                        <p>두산커넥트(DoosanCONNECT™)는 굴착기와 휠로더, 굴절식 덤프트럭 등 건설장비의 위치 정보와 가동 현황, 주요부품 상태 등을 원격으로 모니터링하는 솔루션으로,
+                            건설기계 분야에서 선제적으로 IOT 서비스를 제공해 장비 운영의 효율성 및 사용자 편의성을 극대화했다는 평가를 받고 있습니다.</p>
+                        <a href="#" class="more">더보기<img src="img/arrow-white.png" alt="더보기"></a>
+                    </div>
+                </li>
+            </ul>
+            <p class="control">
+                <a href="#" class="prev"><i class="fas fa-chevron-left"></i></a>
+                <a href="#" class="next"><i class="fas fa-chevron-right"></i></a>
+            </p>
+            <ul class="indicator">
+                <li class="on"><a href="#">1번 슬라이드</a></li>
+                <li><a href="#">2번 슬라이드</a></li>
+                <li><a href="#">3번 슬라이드</a></li>
+            </ul>
+        </section>
+        <section id="news">
+           <div>
+                <h2>Now on<br>Doosan Infracore</h2>
+                <p>두산인프라코어의 모든 소식을<br> 생생하게 보실 수 있습니다.</p>
+                <a href="#" class="more">더보기<img src="img/arrow.png" alt="더보기"></a>
+                <p class="control">
+                    <a href="#" class="prev"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#" class="next"><i class="fas fa-chevron-right"></i></a>
+                </p>
+           </div>
+            <div class="banner">
+                <ul class="slide">
+                    <li>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div><img src="img/news-slide1.jpeg" alt="두산인프라코어, 차세대 휠로더 ‘DL-7’ 시리즈 출시"></div>
+                            <h3>두산인프라코어, 차세대 휠로더 ‘DL-7’ 시리즈 출시 </h3>
+                            <span>2020. 3. 30</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div><img src="img/news-slide2.jpeg" alt="두산인프라코어, 스마트 건설 솔루션 ‘사이트클라우드’ 출시"></div>
+                            <h3>두산인프라코어, 스마트 건설 솔루션 ‘사이트클라우드’ 출시</h3>
+                            <span>2020. 3. 30</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div><img src="img/news-slide3.jpeg" alt="두산인프라코어, 중국 각지서 대형 굴착기 연이어 수주"></div>
+                            <h3>두산인프라코어, 중국 각지서 대형 굴착기 연이어 수주</h3>
+                            <span>2020. 3. 23</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div><img src="img/news-slide4.jpeg" alt="두산인프라코어, 사우디·폴란드에서 잇달아 굴절식 덤프트럭(ADT) 수주"></div>
+                            <h3>두산인프라코어, 사우디·폴란드에서 잇달아 굴절식 덤프트럭(ADT) 수주</h3>
+                            <span>2020. 5.19</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div><img src="img/news-slide5.jpeg" alt="두산인프라코어, 중국 지린성에서 굴착기 대규모 수주"></div>
+                            <h3>두산인프라코어, 중국 지린성에서 굴착기 대규모 수주</h3>
+                            <span>2020. 5. 19</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div><img src="img/news-slide6.jpeg" alt="두산인프라코어, 상용차 시장에 ‘유로6’ 전자식 엔진 출시"></div>
+                            <h3>두산인프라코어, 상용차 시장에 ‘유로6’ 전자식 엔진 출시</h3>
+                            <span>2020. 5. 5</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div><img src="img/news-slide7.jpeg" alt="두산인프라코어, 2020 중동 전력 전시회 참가"></div>
+                            <h3>두산인프라코어, 2020 중동 전력 전시회 참가</h3>
+                            <span>2020. 3. 30</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="info">
+            <div class="half">
+                <h2>Growing <br class="only-pc">the Value <br>with Partners</h2>
+                <p>투자정보를 통해 역동적으로 성장하는 글로벌 두산인프라코어를 만나보십시오.</p>
+                <div class="more-hide-btn"><a href="#"><span>자세히보기</span><img src="img/arrow.png" alt="자세히보기"></a></div>
+                <div>
+                    <div class="graph-info">
+                        <p>매출액</p>
+                        <p>2019년 누계 <strong class="black">8조 1,858억원</strong> 달성으로 전년 대비 <strong class="black">5.9%</strong> 성장</p>
+                    </div>
+                    <img class="graph" src="img/graph-img.jpg" alt="매출액 변화 그래프">
+                    <!-- <div class="graph">
+                        <div class="y">
+                            <span>80,000</span>
+                            <span>75,000</span>
+                            <span>70,000</span>
+                        </div>
+                        <div class="x">
+                            <span>2018</span>
+                            <span>2019</span>
+                        </div>
+                        <div class="bar">
+                            <span>77,301</span>
+                            <span>81,858</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="half">
+                <h2>Innovation, Resilence, Transformation</h2>
+                <p>통합보고서를 통해 다양한 이해 관계자와 효과적으로 커뮤니케이션합니다.</p>
+                <div class="more-hide-btn"><a href="#"><span>자세히보기</span><img src="img/arrow.png" alt="자세히보기"></a></div>
+                <img class="buildings" src="img/buildings.jpeg" alt="회사이미지">
+            </div>
+            
+           
+    </section>
+    </main>
+<footer>
+    <div class="wrapper">
+    <ul class="menu">
+        <li>회사소개
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">비전</a></li>
+                <li><a href="#">역사</a></li>
+                <li><a href="#">브랜드 커뮤니케이션</a></li>
+                <li><a href="#">이노베이션</a></li>
+                <li><a href="#">뉴스 & 미디어</a></li>
+            </ul>
+        </li>
+        <li>사업영역
+            <ul>
+                <li><a href="">건설기계</a></li>
+                <li><a href="">엔진</a></li>
+            </ul>
+        </li>
+        <li>지속가능경영
+            <ul>
+                <li><a href="#">개요</a></li>
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">동반성장</a></li>
+                <li><a href="#">공정거래</a></li>
+                <li><a href="#">EHS</a></li>
+                <li><a href="#">사회공헌</a></li>
+            </ul>
+        </li>
+        <li>투자정보
+            <ul>
+                <li><a href="#">거버넌스</a></li>
+                <li><a href="#">IR정보</a></li>
+                <li><a href="#">전자공고 / 공시</a></li>
+            </ul>
+        </li>
+        <li>인재경영
+            <ul>
+                <li><a href="#">두산의 인재</a></li>
+                <li><a href="#">채용전형 안내</a></li>
+                <li><a href="#">복리후생</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="ft-bottom">
+        <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">글로벌 네트워크</a></li>
+            <li><a href="#">회사소개서<i class="fas fa-long-arrow-alt-down"></i></a></li>
+            <li><a href="#">통합보고서<i class="fas fa-long-arrow-alt-down"></i></a></li>
+            <li><a href="#">온라인 업체 등록<i class="fas fa-external-link-alt"></i></a></li>
+            <li><a href="#">Supplier Portal<i class="fas fa-external-link-alt"></i></a></li>
+            <li><a href="#">공인인증시스템<i class="fas fa-external-link-alt"></i></a></li>
+            <li><a href="#">법적고지</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+        <div>
+            <ul class="sns">
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+            <div class="familysites">
+                <ul>
+                    <li>
+                        <a href="#">Related sites</a>
+                        <ul>
+                            <li><a href="#">두산그룹</a></li>
+                            <li><a href="#">두산중공업</a></li>
+                            <li><a href="#">두산밥캣</a></li>
+                            <li><a href="#">두산건설</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="#">이동</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <a href="#"><img src="img/step1_logo_color.png" alt="두산로고"></a>
+        <span>© 2020 두산인프라코어(주)</span> 
+    </div>
+</div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
