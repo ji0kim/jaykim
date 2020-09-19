@@ -8,8 +8,8 @@ $(document).ready(function(){
     setTypeWriter();
     function setTypeWriter (){
         var i = 0;
-        // var txt = 'Hi, I\'m Jay Kim.  I\'m front-end UI developer based on Seoul, South Korea. I love making websites which give users new experience :)'; 
-        var txt = '안녕하세요 김지영입니다! ^^'; 
+        var txt = 'Hi, I\'m Jay Kim.  I\'m front-end developer. I love making websites which give users new experience :)'; 
+        // var txt = '안녕하세요 김지영입니다! ^^'; 
         var speed = 300; /* The speed/duration of the effect in milliseconds */
         typeWriter();
         function typeWriter() {
