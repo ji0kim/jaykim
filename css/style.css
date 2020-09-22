@@ -47,7 +47,7 @@ header nav ul li ul.site li a p span {font-size: 1.5rem; font-weight: bold; disp
 header nav > ul > li:nth-child(2) {width: 92%; right: 84%; z-index: 100;}
 header nav > ul > li:nth-child(2).on {right: 8% !important;}
 header nav > ul > li:nth-child(2) ul.skill {position: relative; left: 0; top: 0; width: 92%; height: 100%; padding: 100px 100px 0 24%; box-sizing: border-box; text-align: left;}
-header nav > ul > li:nth-child(2) ul.skill li {display: inline-block; font-size: 25px; line-height: 35px; padding: 0 10px; margin: 0 3px; border: 2px solid black; border-radius: 20px; font-weight: bold; }
+header nav > ul > li:nth-child(2) ul.skill li {display: inline-block; font-size: 25px; line-height: 35px; padding: 0 10px; margin: 3px; border: 2px solid black; border-radius: 20px; font-weight: bold; }
 
 /* contact */
 header nav > ul > li:nth-child(3) {width: 100%; right: 76%; z-index: 50;} 
