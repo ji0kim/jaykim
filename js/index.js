@@ -10,7 +10,7 @@ $(document).ready(function(){
         var i = 0;
         var txt = 'Hi, I\'m Jay Kim.  I\'m front-end developer. I love making websites which give users new experience :)'; 
         // var txt = '안녕하세요 김지영입니다! ^^'; 
-        var speed = 300; /* The speed/duration of the effect in milliseconds */
+        var speed = 250; /* The speed/duration of the effect in milliseconds */
         typeWriter();
         function typeWriter() {
             if (i < txt.length) {
@@ -31,7 +31,6 @@ $(document).ready(function(){
 
     //메뉴
     $('header nav a.menu').on('click', function(){ 
-            console.log('열어라');
             $(this).toggleClass('close');
             $('header nav > ul.gnb').toggleClass('on');  
             // $('.menu .bar').css({'background':'#fff'});
@@ -110,25 +109,6 @@ $(document).ready(function(){
                 ele3.addClass('slide4');
                 ele4.addClass('slide1');
             }
-            console.log(slidePrev + '/'+ slideNow+ '/'+slideNext);
-            /*
-            if(n % 2 !== 0){
-                ele1.classList.add('slide' + n%4 );
-                ele2.classList.add('slide' + (n+1)%4);
-                ele3.classList.add('slide' + (n+2)%4);
-                ele4.classList.add('slide' + (n+3)%4);
-            }
-            */ 
-                // $('ul.works li:eq(' +(n - 1) + ')').addClass('slide1');
-                // $('ul.works li:eq(' + n + ')').addClass('slide2'); 
-                // $('ul.works li:eq(' + slideNext1 + ')').addClass('slide3');
-                // $('ul.works li:eq(' + slideNext2 + ')').addClass('slide4');
-                // $('ul.works li').removeClass();
-                // $('ul.works li:eq('+ n - 1 + ')').addClass('slide1');
-                // $('ul.works li:eq('+ n + ')').addClass('slide2'); 
-                // $('ul.works li:eq('+ slideNext1+ ')').addClass('slide3');
-                // $('ul.works li:eq('+ slideNext2+ ')').addClass('slide4');
-            // n에 무엇을 넣을지 결정하는 부분. 
             slidePrev = (n - 1) < 1 ? numSlide : (n - 1);
             slideNow = n;
             slideNext = (n + 1) > numSlide ? 1 : (n + 1);
