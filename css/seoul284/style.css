@@ -158,7 +158,7 @@ a:hover .cont-img {transition: all 0.4s; margin-top: -5px; box-shadow: 10px 10px
 #wrapper .news-table-wrap {width: 74%; float: right;}
 #wrapper .news-table-wrap fieldset {border: none;}
 #wrapper .news-table-wrap fieldset form {float: right;}
-#wrapper .news-table-wrap table {width: 100%; border-bottom: 1px solid #666666; border-collapse: collapse; font-family: ;}
+#wrapper .news-table-wrap table {width: 100%; border-bottom: 1px solid #666666; border-collapse: collapse;}
 #wrapper .news-table-wrap table thead {border-bottom: 3px solid#000; text-align: left;}
 #wrapper .news-table-wrap table thead th {font-size: 14px; padding: 12px 10px;}
 #wrapper .news-table-wrap table tbody tr {height: 50px; border-bottom: 1px solid #adadad; font-size: 16px; line-height: 50px;}
