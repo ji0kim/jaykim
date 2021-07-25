@@ -1,0 +1,301 @@
+@charset "utf-8";
+
+html  { font-size: 10px; font-weight: 100;}
+/* common */
+#skip-nav {position: fixed; top: -42px; width: 100%; line-height: 40px; text-align: center; background: rgba(0,0,0,0.6); color: #f9f9f9; z-index: 10000000000; transition: top 0.3s ;} /* a는 인라인! 디자인 거슬리지만 않게 만들면 된다*/
+#skip-nav:focus {top: 0;}
+.pc {display: inline-block !important;}
+.mobile {display: none;}
+.hide {width: 0; height: 0; font-size: 0; color: transparent;}
+.navy-btn {display: inline-block; color: #fff; background-color: #172345; font-size: 2rem; padding: 10px 30px; border-radius: 5px; border: 2px solid #172345; box-sizing: border-box; font-weight: 500; margin-top: 25px; }
+.navy-btn:hover {color: #172345; font-weight: 500; background-color: #fff; border: 2px solid #172345;}
+.content {opacity: 0; transform: translateY(80px); transition: all 0.7s ease-in-out;}
+.content.show {opacity: 1; transform: translateY(0);}
+
+/* -----------header----------- */
+header {position: fixed; top: 0; width: 100%; height: 70px; z-index: 100; background-color: rgba(0, 0, 0, 0); transition: all 0.7s; font-weight: bold; padding:20px; box-sizing: border-box;}
+header.on {background-color: rgba(255, 255, 255, 1); transition: all 0.7s; box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.1);}
+header h1 {position: absolute; left: 50%; top: 0; transform: translate(-50%, 0); width: 70px; line-height: 70px;}
+header h1 > a {display: block;} 
+header h1 a img {width: 100%;}
+header {display: inline-block;}
+header ul.left {float: left;}
+header ul.right {float: right;}
+header ul.left li {display: inline-block;}
+header ul.right li {display: inline-block;}
+header ul li > a {margin: 0 19px; letter-spacing: 2px; line-height: 32px; font-size: 1.4rem;}
+
+header ul li.about div.about-list {display: none; left: -150vw; transition: all 1s;}
+header ul li.about.on div.about-list {position: fixed; top:0; left: 0; width: 500px; height: 100%; display: block; z-index: 1000; background-color: rgb(253, 248, 245); transition: all 1s;}
+header ul li.about div.about-list a.close{position: absolute; top: 20px; right: 20px; box-sizing: border-box; width: 40px; height: 40px; text-align: center;line-height: 35px; background-color: #fff; border: 2px solid #E2E2E2; border-radius: 50%; z-index: 101;  }
+header ul li.about div.about-list ul {padding: 30vh 50px; line-height: 1.3;}
+header ul li.about div.about-list ul li{display: block;}
+header ul li.about div.about-list ul li a {display: block; width: 100%; color: #324477; font-size:4rem; font-weight: bold; line-height: 60px;} 
+header ul li.about div.about-list ul li a:hover {color: #000;}
+
+/* main */
+.main {overflow-x: hidden;}
+.main-img {width: 100%; height: 70vh; background: url(../img/family1.jpg)no-repeat 50% 50%; background-size: cover;}
+.main-img div.text {position: relative;  left: 50%; top: 50%; transform: translate(-50%, -50%); width: 100%; text-align: center;}
+.main-img div.text h2 {font-size: 4.5vw; letter-spacing: -3px; margin-bottom: 20px;}
+.main-img div.text p {font-size: 2.5rem; max-width: 650px; margin: 0 auto;}
+.main-img div.text p:first-child {font-weight: bold;}
+
+/* .logos-wrap-inner */
+.logos-wrap {background-color: #FDF8F5; height: auto;}
+.logos-wrap .box {width: 100%; height: auto;}
+.logos-wrap div.window-logo ul.slide {max-width: 1400px; height: auto; margin: 0 auto; overflow: hidden; text-align: center;}
+.logos-wrap div.window-logo ul.slide li:first-child  {margin-top: 1.6rem; color: rgba(23, 35, 69, 0.7);}
+.logos-wrap div.window-logo ul.slide li {display: inline-block; margin: 1rem 2rem; padding: 5px 0; vertical-align: middle;}
+.logos-wrap div.window-logo ul.slide li a {display: block;}
+.logos-wrap div.window-logo ul.slide li a span {display: none;}
+.logos-wrap div.window-logo ul.slide li a img {opacity: 0.7;}
+.logos-wrap div.window-logo ul.slide li:nth-child(2) a img{height: 20px;}
+.logos-wrap div.window-logo ul.slide li:nth-child(3) a img{height: 25px;}
+.logos-wrap div.window-logo ul.slide li:nth-child(4) a img{height: 15px;}
+.logos-wrap div.window-logo ul.slide li:nth-child(5) a img{height: 22px;}
+.logos-wrap div.window-logo ul.slide li:nth-child(6) a img{height: 12px;}
+.logos-wrap div.window-logo ul.slide li:nth-child(7) a img{height: 17px;}
+.logos-wrap div.window-logo ul.slide li:nth-child(8) a img{height: 30px;}
+.logos-wrap div.window-logo ul.slide li:nth-child(9) a img{height: 12px;}
+.logos-wrap div.window-logo ul.slide li:nth-child(10) a img{height: 15px;}
+
+.text-wrap {width: 650px; margin: 65px auto; text-align: center;}
+.text-wrap div.rotate-circle {position: relative; width: 200px; height: 200px; margin: 0 auto;}
+.text-wrap div.rotate-circle img {position: static; margin: 0px auto; width: 200px; height: auto;}
+.text-wrap div.rotate-circle span.emoticon img{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 50px;}
+.text-wrap p {font-size: 2rem; margin-bottom: 15px; line-height: 1.5;}
+.text-wrap p:nth-of-type(1) {font-weight: bold; margin-top: 20px;}
+.text-wrap span {font-weight: bold; font-size: 1.4rem;}
+.text-wrap span + span::before {content: '|'; margin: 0 10px;}
+
+/* products-section */
+.product.container {width: 100%; text-align: center;}
+.products-section > h3 {display: inline-block; position: relative; font-weight: bold; letter-spacing: 1.1px; margin-bottom: 20px;}
+.products-section > h3::after {content: '';  position: absolute; top: 15px; left: 0; width: 100%; height: 2px; background-color: #F5B4A4;}     
+.products-container {width: 100%; max-width: 1500px; height: auto; overflow: hidden; margin: 0 auto;}
+.product-wrap {position: relative; width: calc(25% - 20px); height:auto; margin: 10px; float: left;}
+.product-wrap div.product {position: relative; width: 100%; height: calc(30vw - 20px); background-color: #fdf8f5; border-radius: 10px; padding: 15px; box-sizing: border-box;}
+.product-wrap div.product div.top {width: 100%; overflow: hidden;}
+.product-wrap div.product div.top span {font-size: 1.1rem; font-weight: bold; color:#3a5ec1; padding: 5px 10px; background-color: #fff; border-radius: 5px;}
+.product-wrap div.product div.top span:nth-of-type(1){float: left;}
+.product-wrap div.product div.top span:nth-of-type(2){float: right;}
+.product-wrap div.product div.img {width: calc(100% - 30px); height: 80%; position: absolute; transition: all 0.4s;}  
+.product-wrap div.product div.img a {display: block;}
+.product-wrap div.product div.img a img {width: 100%;}
+.product-wrap div.product a.price {position: absolute; bottom: 15px; left: 50%; transform: translate(-50%, 0); width: calc(100% - 30px); display: block; background-color: #fff;  padding: 15px 0 10px 0; border-radius: 3px; font-size: 1.5rem; font-weight: bold;}
+.product-wrap div.product a.price:hover {color: #003BDE;}
+.product-wrap div.product:hover {background-color: #FBF2ED;}
+.product-wrap div.product:hover .img {transform: scale(1.05); margin: auto; transition: all 0.4s;}
+.product-wrap div.info {height: 120px; text-align: center;}
+.product-wrap div.info a.name {display: block; width: 90%; margin: 20px auto 10px; font-size: 2.5rem; font-weight: bold;}
+.product-wrap div.info span {display: block; font-size: 1rem; color: #172345; padding-top: 4px;}
+.product-wrap div.info span.star {position: relative; font-size: 14px;}
+.product-wrap div.info span.star::before {position: relative; content: ''; width: 70px; height: 20px; margin: 0 auto; display: block;  background: url(../img/star.svg) no-repeat; background-size: 100%;}
+.product-wrap div.info .new-drop  {position: relative; color :rgb(236, 124, 104);}
+.product-wrap div.info .new-drop::before {content:''; display: block; width: 10px; height: 10px; position: absolute; top: 0; left: 120px; background: url(../img/left-emphasise.gif) no-repeat 0 0 ; background-size: cover;}
+.product-wrap div.info .new-drop::after {content:''; display: block; width: 10px; height: 10px; position: absolute; top: 0; right: 120px; background: url(../img/right-emphasise.gif) no-repeat 0 0 ; background-size: cover;}
+section.product.container a.shop-all {display: inline-block; margin: 40px auto; padding: 10px 80px; font-size: 2rem; font-weight: bold; text-align: center; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 5px; box-shadow: 1px 2px 3px rgba(0,0,0, 0.05); }
+section.product.container a.shop-all:hover {border: 1px solid #eeeeee; box-shadow: 1px 2px 3px rgba(0,0,0, 0.1); color: #324477;}
+
+ /* section 남자 gif, founder 공통 */
+section {width: 100vw; overflow: hidden;}
+section div.box {width: 50vw; height: 640px; position: relative;}
+section div.box.l {float: left;}
+section div.box.l img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; object-fit: cover;}
+section div.box.r {float: left; padding: 100px 20px 0 100px; box-sizing: border-box; background-color: #FDF8F5; padding: 100px;}
+section div.box.r h2 {font-size: 6vw; line-height: 0.9; letter-spacing: -5px; margin-bottom: 20px; color: #172345;}
+section div.box.r p {font-size: 1.8rem; line-height: 1.7; letter-spacing: -0.3px;}
+section div.box.r ul {margin-top: 20px;}
+section div.box.r ul li {font-size: 1.7rem; line-height: 2;}
+section div.box.r ul li i{font-size: 1.8rem; line-height: 2; color: #3a5ec1; padding-right: 10px;}
+section div.box.r a.more {display: block; font-size: 3rem; font-weight: bold; padding-top: 50px; color: #3a5ec1;}
+
+/* man brushing teeth */
+.m-brushing ul > li {padding-left: 5px; font-weight: lighter;}
+
+@keyframes text-slide {
+    from {left: 0;}
+    to {left: -900%;}
+}
+.text-slide {position: relative; width: 100vw; height: 370px; text-align: center; }
+.text-slide::before {content: ''; position: absolute; top: 0; left: 0; width: 1000%; height: 100%; background: linear-gradient(270deg, #a4d1d5, #90bcdf, #bac2f3,#f8d774,#f2d7a1); animation: text-slide 5s ease infinite; animation-direction: alternate;}
+.text-slide .slide-body {position: absolute; top: 0; left: 50%; transform: translate(-50%, 0); width: 100%; padding: 50px 0;}
+.text-slide .slide-body:not(.block) {display: none;}
+.text-slide .slide-body p.text {width:65%; font: 2.6rem 'Rozha One', serif; font-style: italic;  margin: 0 auto;}
+.text-slide .slide-body img {height: 20px; margin-top: 30px;}
+.text-slide p.control a.pre, 
+.text-slide p.control a.next {position: absolute; top: 50%; transform: translate(0 -50%); font-size: 15px; cursor: pointer;}
+.text-slide p.control a.pre {left: 15px;}
+.text-slide p.control a.next {right: 15px;}
+.text-slide ul.indicator {position: absolute; left:50%; bottom: 90px; transform: translate(-50%, 0);}
+.text-slide ul.indicator li {display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin: 20px 5px; border: 1px solid #000000;}
+.text-slide ul.indicator li.on {background-color: #000;}
+.text-slide ul.indicator li a {color: transparent; text-indent: -9999px; }
+.text-slide > a {position: absolute; left: 50%; bottom: 70px; transform: translate(-50%, 0); font-size: 15px; font-weight: bold; letter-spacing: 1.3px; text-transform: uppercase; border-bottom:1px solid #000000;}
+
+/* woman gifbox */
+.how-to {position: relative; width: 100vw; height: 60vw; background: url(../img/Bite---Bite-Brush-Repeat-Gif--4.gif) right center no-repeat; background-size: 50vw auto;}
+.how-to div.txt {position: absolute; left: 5%; top: 50%; transform: translate(0, -50%); width: 40%;}
+.how-to div.txt h3 {position: relative; display: inline-block; margin-bottom: 40px; font-size: 1.3rem;}
+.how-to div.txt h3::after {content: ''; position: absolute; top: 15px; left: 0; width: 100%; height: 2px; background-color: #F5B4A4;}
+.how-to div.txt h2 {page-break-after: auto; font-size: 6vw; letter-spacing: -5.5px; line-height: 0.9;}
+.how-to div.txt ul {margin-top: 50px;}
+.how-to div.txt ul li {margin-bottom: 15px; font-size: 2rem; line-height: 1.7;}
+.how-to div.txt li span:not(.bold) {position: relative; display: inline-block; font: 1.5rem 'Inter', sans-serif; font-weight: bold; }
+.how-to div.txt li span:not(.bold)::before {content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 30px; height: 30px; border-radius: 50%; background-color: #E4F5FB; text-align: center; z-index:-10; }
+.how-to div.txt li span.bold {padding-left: 15px; font-family: 'Inter', sans-serif; font-weight: 700;}
+.how-to div.txt a {display: inline-block; margin-top: 20px; color: #000; font-size: 2.4rem; font-weight: bold;}
+.how-to div.txt a:hover {color: #3a5ec1;}
+.how-to div.txt a i {margin-left: 15px; font-size: 20px;}
+
+/* founder */
+#founder {width: 100vw; overflow: hidden;}
+#founder div.box img.founder {width: 100%;}
+#founder div.box a.play {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 110px; height: 110px; z-index: 1;}
+
+/* no-plastic */
+.no-plastic {position: relative; overflow: hidden; width: 100vw; height:120vh; min-height: 450px; color: #172345; background: #E7F7FC linear-gradient(rgb(231, 247, 252), #fff, rgb(231, 247, 252)); text-align: center;}
+.no-plastic div.txt {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;}
+.no-plastic div.txt h2 {font-size: 7vw; letter-spacing: -3px;}
+.no-plastic div.txt p {margin: 0 auto; font-size: 2.5rem; line-height: 1.5; max-width: 650px;}
+.no-plastic div.txt a {font-weight: bold; padding: 20px 50px; margin-top: 50px;}
+
+/* 병 wrap */
+.no-plastic .bottle-wrap {position: absolute; left: 50%; top:  50%; transform: translate(-50%, -50%); width: 100%; height: 100%; opacity: 0.2; transition: all 3s;}
+.no-plastic .bottle-wrap.on{position: absolute; left: 50%; top:  50%; transform: translate(-50%, -50%); width: 100%; height: 100%; opacity: 1;}
+.bottle-wrap .bottle {position: absolute; width: 220px; }
+.bottle-wrap .bottle1{ left: 0;}
+.bottle-wrap .bottle2{left: 60%;}
+.bottle-wrap .bottle3{right: 10%;}
+.bottle-wrap .bottle4{left: 20%;}
+.bottle-wrap .bottle5{right: 30%;}
+
+/* tablet-wrap */
+.no-plastic .tablet-wrap {position: absolute; width: 100%; height: 100%; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.tablet-wrap .tablet {position: absolute; width: 32px; animation: tablet linear 15s infinite alternate; }
+.tablet-wrap .tablet1 {left: 10%;}
+.tablet-wrap .tablet2 {left: 20%;}
+.tablet-wrap .tablet3 {left: 50%;}
+.tablet-wrap .tablet4 {right: 20%;}
+.tablet-wrap .tablet5 {right: 15%;}
+.tablet-wrap .tablet6 {right: 30%;}
+
+/* better~ */
+.better  {width: 100vw; height: auto; background-color: #D4E0E7; text-align: center;}
+.better div.img {position: relative; width: 100%; height:700px; background: url(../img/bite-scene2c.jpg)no-repeat 50% 50%; background-size: cover;}
+.better div.img h2 {position: absolute; left: 50%;  bottom: 0; transform: translateX(-50%); width: 100%; font-family: 'Rozha One', serif; font-size: 6rem; line-height: 0.9; }
+.better div.txt {width: 35%; margin: 20px auto;}
+.better div.txt p  {margin-top: 20px; width: 80%; margin: 0 auto; font-size: 1.8rem; line-height: 1.5;}
+.better div.txt a.navy-btn {margin-bottom: 20px;}
+.better div.txt a.navy-btn + p {font-size: 1.5rem; font-weight: bold;}
+.better div.txt a:hover {color: #172345; border: 2px solid #172345; background-color: #fff; box-sizing: border-box;}
+
+/* subscribe */
+.subscribe {position: relative; width: 100vw; height:auto; padding-bottom: 30px; background: url(../img/blue-wave.svg) no-repeat 0 -10px ; background-color: #FDF8F5; background-size: 110% auto;}
+.subscribe .benefit-wrap {max-width: 1200px; margin: 259px auto 0;  overflow: hidden; color: #172345;}
+.subscribe .benefit-wrap .benefit {width: 33.3333%; float: left; text-align: center;}
+.subscribe .benefit-wrap .benefit img {height: 75px; margin-bottom: 20px;}
+.subscribe .benefit-wrap .benefit p {width: 75%; margin: 0 auto; font-size: 2.3rem; font-weight: bold;}
+.subscribe .benefit-wrap .benefit p + p {font-size: 1.5rem; font-weight: normal; line-height: 1.7; margin-top: 10px;}
+.subscribe .benefit-wrap .benefit p + p + p {font-weight: bold; margin-top: 15px;}
+.empire {width:100vw; padding: 100px 0;  background: #FDF8F5 url(../img/empire-final.png) 50% 10% no-repeat; background-size: 70%; text-align: center;}
+.empire h2 {max-width: 1200px;  margin: 400px auto 40px; font-size: 80px; letter-spacing: -5px; line-height: 1;}
+.empire p  {max-width: 900px; margin: 0 auto 20px; font-size: 2.5rem; letter-spacing: -1px; line-height: 1.5;}
+.empire a {font-size: 2.5rem; font-weight: bold; color: #324477; display: block;}
+.empire a:hover {color: #000;} 
+
+/* review section */
+.review {position: relative; width: 100vw; height: 600px; overflow: hidden; background-image: linear-gradient(rgb(227, 245, 250), rgb(249, 238, 231)); background-repeat: no-repeat; vertical-align: middle;}
+.review div.txt {position: absolute; width: 35%; left: 5%; top: 50%; transform: translate(0, -50%);}
+.review div.txt span {font-size: 1.5rem;}
+.review div.txt span i {color: #FFBF26;}
+.review div.txt h2 {font-size: 4vw; letter-spacing: -5px; line-height: 1; margin-bottom: 20px;}
+.review div.txt p {font-size: 2.5rem; line-height: 1.8; margin-bottom: 1em;}
+.review div.txt a {font-size: 2rem; font-weight: bold; color: #3a5ec1;}
+.review div.txt a:hover {color: #000;}
+
+.review div.window {position: absolute; right: 0; top: 50%; width: 50vw; height: 520px; overflow: hidden; transform: translate(0, -50%);}
+.review div.window .fa-arrow-left {left: 0;}
+.review div.window .fa-arrow-right {right: 0;}
+.review div.window ul.slide {position: absolute; left: 0; top: 0; width: 100%; height: 520px;}
+.review div.window ul.slide li {position: absolute; left: 0; top: 0; width: calc(50% - 30px); height:auto; margin: 0 15px;}
+.review div.window ul.slide li div.box {width: 100%; height: 250px; background: #fff; z-index: 100; padding: 25px 30px; box-sizing: border-box; overflow: hidden;}
+.review div.window ul.slide li div.box:nth-child(2) {margin-top: 20px;}
+.review div.window ul.slide li div.box div.profile {width: 50px; height: 50px; float: left; margin: -5px 10px 0 0 ;}
+.review div.window ul.slide li div.box div.profile img {border-radius: 50px; width: 100%;}
+.review div.window ul.slide li div.box span i {color: #FFBF26;}
+.review div.window ul.slide li div.box p.name {font-size: 1.7rem; font-weight: bold; margin-bottom: 30px;}
+.review div.window ul.slide li div.box q {font: 1.9rem 'PT Serif', serif; font-style: italic; background-color: transparent; width: calc(100% - 20px); margin: 0 auto; display: -webkit-box;  -webkit-line-clamp: 5; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden;}
+.review div.window p.control {position: absolute; top: 50%; width: 100%; transform: translateY(-50%); z-index: 100;} 
+.review div.window p.control a {width: 40px; height: 40px; background: rgba(255, 255, 255, 0.8); text-align: center; line-height: 40px; border-radius: 50%; z-index: 100;}
+.review div.window p.control a.prev {float: left;}
+.review div.window p.control a.next {float: right;}
+.review div.window p.control a i {font-size: 30px;}
+
+/* email subscribe section */
+.email {position: relative; width: 100vw; height: 40vw; background:  #CFE3E7 url(../img/toothbrush-foams.jpg) right 60px bottom no-repeat; background-size: 40%;}
+.email div.txt {position: absolute; top: 50%; left: 10%; transform: translate(0, -50%); width: 30%;}
+.email div.txt h2 {font-family: 'Rozha One', serif; font-size: 5rem; line-height: 1;}
+.email div.txt p {word-break: keep-all; font-size: 1.7rem; line-height: 1.5; margin-bottom: 40px;}
+.email div.txt .input-email {background: transparent; border-bottom: 2px solid #000; overflow: hidden; height: 50px;}
+.email div.txt .input-email input {background: transparent; border: none; width: 60%; font-size: 1.8rem;}
+.email div.txt .input-email a {font-size: 1.8rem; float: right;}
+
+/* -------------------------footer -------------------------*/
+footer {width: 100vw; background-color: #FDF8F5; color:#172345;}
+footer div.inner {max-width: 1200px; padding: 30px 0; margin: 0 auto 60px;}
+footer div.inner > ul {margin: 0 auto; width: 90%;}
+footer div.inner > ul > li {display: inline-block; width: 23%; padding: 20px; box-sizing: border-box; font-size: 2.5rem; vertical-align: top; font-weight: bold;}
+footer div.inner > ul > li:first-child {display: block; width: 120px;}
+footer div.inner > ul > li:first-child img {width: 100%;}
+footer div.inner > ul > li > ul {margin-top: 15px;}
+footer div.inner > ul > li > ul > li  {display: block; font-size: 1.4rem; padding-bottom: 10px; font-weight: lighter;}
+footer div.inner > ul > li > ul > li.sns {display: inline-block; font-size: 2.3rem; margin-right: 10px;}
+footer div.inner > ul > li:not(:nth-child(6)):not(:nth-child(7)) > ul > li:hover {color: #3a5ec1;}
+footer div.inner > ul > li > ul > li a.blue {color: #3a5ec1; font-weight: bold;}
+footer .address {margin-top: 100px; font-size: 1.6rem; text-align: center;}
+footer .address-logo {margin: 25px;}
+footer .address-logo i {font-size: 3rem; margin: 0 5px;}
+.address a {display: inline-block; margin: 0 20px 50px 0; font-weight: lighter;}
+
+#alert {position: fixed; bottom: 20px; left: 20px; width: 420px; height: 280px; padding: 30px; box-sizing: border-box; background: #ffffff; border: 1px solid #000000; box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.2); z-index: 100000;transition: all 2s; transition-timing-function: linear;}
+#alert.close {position: fixed; bottom: 20px; left: -150%; width: 420px; height: 280px; padding: 30px; box-sizing: border-box; background: #ffffff; border: 1px solid #000000; box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.2); z-index: 100000; transition: all 2s; transition-timing-function: linear;}
+#alert p {font-size: 3rem; text-align: left; line-height: 2; letter-spacing: 0.9px; margin-bottom: 20px;}
+#alert p + p {font-size: 1.4rem; text-align: left; }
+#alert div {position: absolute; bottom: 30px; width: calc(100% - 60px); padding: 5px; box-sizing: border-box; border-bottom: 1px solid #000000;}
+#alert div input {font-size: 1.5rem; border: none; padding-bottom: 20px;}
+#alert div span {float: right; font-size: 1.5rem; font-weight: 700; color: #172345;}
+#alert div span i {padding-left: 10px;}
+#alert > a.x > i {font-size: 2rem; position: absolute; top: 30px; right: 30px; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%; border: 1px solid #000000;}
+
+@media (min-width : 851px) and (max-width : 990px) { 
+    .product-wrap {position: relative; width: calc(33.3333vw - 20px); height:auto; margin: 10px; float: left;}
+    .product-wrap div.product {position: relative; width: 100%; height: calc(40vw - 20px); background-color: #fdf8f5; border-radius: 10px; padding: 15px; box-sizing: border-box;}
+    .product-wrap div.info span.star {position: relative;}
+    .product-wrap div.info span.star::before {position: relative; content: ''; width: 70px; height: 20px; margin: 0 auto; display: block;  background: url(../img/star.svg) no-repeat 0 0; background-size: 100%;}
+    section {width: 100vw; overflow: hidden;}
+    section div.box {width: 100vw; height: 600px; position: relative;}
+    section div.box.l {float: none;}
+    section div.box.r {float: none; text-align: center; height: 500px; padding: 50px;} 
+    section div.box.r h2 {font-size: 6vw; line-height: 0.9; letter-spacing: -5px; margin-bottom: 20px; color: #172345;}
+    section div.box.r p {width: 60%; margin: 0 auto;}
+    .how-to {height: 70vw;}
+    .how-to div.txt {width: 50%;}
+    .better div.img h2 {font-size: 4rem;}
+    .better div.txt {width: 70%;}
+    .better div.txt p {width: 100%;}
+    .bottle-wrap .bottle {width: 160px;}
+    .empire h2 {max-width: 950px;  margin: 300px auto 40px; font-size: 7vw; letter-spacing: -5px; line-height: 1;}
+    .review div.txt h2 {font-size: 5.5rem; letter-spacing: -3px;}
+    .review div.txt p {font-size: 2rem; line-height: 1.5; }
+    .review div.window ul.slide li div.box div.profile {width: 25px; height: 25px; float: left; margin: 0 10px 0 0 ;}
+    .review div.window ul.slide li div.box p.name {margin-bottom: 10px;}
+    .review div.window ul.slide li div.box q {font: 1.6rem 'PT Serif', serif; display: -webkit-box;  -webkit-line-clamp: 7;}
+    footer div.inner > ul > li {width: 20%; font-size: 2rem;}
+}
+
+@media screen and (min-width : 1680px) { 
+    section div.box.r h2 {font-size: 9rem;}
+    .product-wrap div.product {height: 450px;}
+}
