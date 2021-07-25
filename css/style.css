@@ -36,10 +36,10 @@ header nav ul li ul.site {position: absolute; left: 50%; top: 50%; transform: tr
 header nav ul li ul.site li {float: left; width: calc(50% - 30px); max-width: 400px; height: 220px; margin: 0 15px 15px 0; border: 1px solid black; box-sizing: border-box; }
 header nav ul li ul.site li a {position: relative; display: block; width: 100%; height: 100%; font-size: 3rem; color: #fff;  height: 100%; background-size: cover; background-repeat: no-repeat; background-position: top center; text-align: center; }
 header nav ul li ul.site li a::before {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-header nav ul li ul.site li:nth-child(1) a {background-image: url(../img/bite.gif);}
-header nav ul li ul.site li:nth-child(2) a {background-image: url(../img/seoul284.gif);}
-header nav ul li ul.site li:nth-child(3) a {background-image: url(../img/ghm.jpg);}
-header nav ul li ul.site li:nth-child(4) a {background-image: url(../img/main-vid-poster1.jpg);}
+header nav ul li ul.site li:nth-child(1) a {background-image: url(../img/jayHome/bite.gif);}
+header nav ul li ul.site li:nth-child(2) a {background-image: url(../img/jayHome/seoul284.gif);}
+header nav ul li ul.site li:nth-child(3) a {background-image: url(../img/jayHome/ghm.jpg);}
+header nav ul li ul.site li:nth-child(4) a {background-image: url(../img/jayHome/main-vid-poster1.jpg);}
 header nav ul li ul.site li a p {position: absolute; left: 50%; top: 50%; color: #fff; transform: translate(-50%, -50%); width: 100%; opacity: 0; transition: all 0.5s; font-weight: bold; text-align: center;}
 header nav ul li ul.site li a p span {font-size: 1.5rem; font-weight: bold; display: block;}
 
