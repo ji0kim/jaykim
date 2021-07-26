@@ -99,13 +99,13 @@ main .mainPoster .mainPosterImg img + img {display: none;}
 #progInfo .progList {overflow: hidden;}
 #progInfo .progList .progBg,
 #progInfo .smallProgWrap {position: relative; width: calc(33.3333% - 25px); height: 610px; margin: 15px 12.5px; float: left; background: no-repeat; background-size: cover;}
-#progInfo .progList .progBg:first-child {background-image: url("/img/seoul284/hotelexpress.png");}
-#progInfo .progList .progBg:nth-child(2) {background-image: url("/img/seoul284/전기우주.png");}
-#progInfo .progList .progBg:nth-child(3) {background-image: url("/img/seoul284/서울레코드페어.png");}
-#progInfo .progList .progBg:nth-child(5) {background-image: url("/img/seoul284/2019-타이포잔치.png");}
-#progInfo .progList .progBg:nth-child(6) {background-image: url("/img/seoul284/2019-rto365-메인-썸네일.png");}
-#progInfo .progList .progBg:nth-child(7) {background-image: url("/img/seoul284/2019-대한민국건축문화제-1.png");}
-#progInfo .progList .progBg:nth-child(8) {background-image: url("/img/seoul284/2019한복상점.png");}
+#progInfo .progList .progBg:first-child {background-image: url("../../img/seoul284/hotelexpress.png");}
+#progInfo .progList .progBg:nth-child(2) {background-image: url("../../img/seoul284/전기우주.png");}
+#progInfo .progList .progBg:nth-child(3) {background-image: url("../../img/seoul284/서울레코드페어.png");}
+#progInfo .progList .progBg:nth-child(5) {background-image: url("../../img/seoul284/2019-타이포잔치.png");}
+#progInfo .progList .progBg:nth-child(6) {background-image: url("../../img/seoul284/2019-rto365-메인-썸네일.png");}
+#progInfo .progList .progBg:nth-child(7) {background-image: url("../../img/seoul284/2019-대한민국건축문화제-1.png");}
+#progInfo .progList .progBg:nth-child(8) {background-image: url("../../img/seoul284/2019한복상점.png");}
 #progInfo .progList .progBg::before {content: ''; position: absolute; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); opacity: 0; top: 0; left: 0;}
 #progInfo .progList .progBg:hover::before {opacity: 1; transition: 0.2s;}
 #progInfo .progList .progBg .prog,
@@ -118,10 +118,10 @@ main .mainPoster .mainPosterImg img + img {display: none;}
 #progInfo .progList .smallProg div a {display: block; /* height: 100%; */}
 #progInfo .progList .smallProg>.reserv {position: absolute; padding: 4px 30px; bottom: 40px; right: 25px; font-size: 14px; background-color: #fff; border: 1px solid #000;}
 #progInfo .progList .smallProg:first-child {margin-bottom: 25px;}
-#progInfo .progList .smallProg .smallBg1:hover {background-image: url("/img/seoul284/main_hover_img_01.png"); height: 100%;}
-#progInfo .progList .smallProg .smallBg2:hover {background-image: url("/img/seoul284/main_hover_img_02.png"); height: 100%;}
-#progInfo .progList .smallProg .smallBg3:hover {background-image: url("/img/seoul284main_hover_img_03.png"); height: 100%;}
-#progInfo .progList .smallProg .smallBg4:hover {background-image: url("/img/seoul284/main_hover_img_04.png"); height: 100%;}
+#progInfo .progList .smallProg .smallBg1:hover {background-image: url("../../img/seoul284/main_hover_img_01.png"); height: 100%;}
+#progInfo .progList .smallProg .smallBg2:hover {background-image: url("../../img/seoul284/main_hover_img_02.png"); height: 100%;}
+#progInfo .progList .smallProg .smallBg3:hover {background-image: url("../../img/seoul284main_hover_img_03.png"); height: 100%;}
+#progInfo .progList .smallProg .smallBg4:hover {background-image: url("../../img/seoul284/main_hover_img_04.png"); height: 100%;}
 #progInfo .progList .smallProg h4 {margin: 15px 0 15px 0; font-size: 32px ; font-weight: 500; line-height: 1.2; color: #000;}
 #progInfo .progList .smallProg .text {width: 80%; text-align: left; font-size: 16px; font-weight: 200; line-height: 1.5; color: #666666;}
 #progInfo .progList .smallProg .orange {position: relative; display: inline-block; color: #f06400; /* display: inline-block; */ margin-top: 20px; margin-bottom: 20px;}
