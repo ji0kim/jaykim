@@ -149,20 +149,20 @@ a:hover .cont-img {transition: all 0.4s; margin-top: -5px; box-shadow: 10px 10px
 
 
 /* sub - news/info */
-#wrapper {width: 1200px; margin: 75px auto; overflow: hidden;}
-#wrapper .hide-h1{width: 0; height: 0; opacity: 0;}
+.mainWrap {width: 1200px; margin: 75px auto; overflow: hidden;}
+.mainWrap .hide-h1{width: 0; height: 0; opacity: 0;}
 .heading {margin-bottom: 30px;}
 .heading .heading-title {font-size: 34px; color: #000000;}
 .heading .heading-text {font-size: 16px; color:#666666 ;}
 
-#wrapper .news-table-wrap {width: 74%; float: right;}
-#wrapper .news-table-wrap fieldset {border: none;}
-#wrapper .news-table-wrap fieldset form {float: right;}
-#wrapper .news-table-wrap table {width: 100%; border-bottom: 1px solid #666666; border-collapse: collapse;}
-#wrapper .news-table-wrap table thead {border-bottom: 3px solid#000; text-align: left;}
-#wrapper .news-table-wrap table thead th {font-size: 14px; padding: 12px 10px;}
-#wrapper .news-table-wrap table tbody tr {height: 50px; border-bottom: 1px solid #adadad; font-size: 16px; line-height: 50px;}
-#wrapper .news-table-wrap table tbody td {text-indent: 15px;}
-#wrapper .news-table-wrap table tbody .title {display: block;}
-#wrapper .news-table-wrap table tbody .grayText {color: #999;}
-#wrapper .news-table-wrap table tbody .gray {background-color: #F4F4F4;}
+.mainWrap .news-table-wrap {width: 74%;}
+.mainWrap .news-table-wrap fieldset {border: none;}
+.mainWrap .news-table-wrap fieldset form {float: right;}
+.mainWrap .news-table-wrap table {width: 100%; border-bottom: 1px solid #666666; border-collapse: collapse;}
+.mainWrap .news-table-wrap table thead {border-bottom: 3px solid#000; text-align: left;}
+.mainWrap .news-table-wrap table thead th {font-size: 14px; padding: 12px 10px;}
+.mainWrap .news-table-wrap table tbody tr {height: 50px; border-bottom: 1px solid #adadad; font-size: 16px; line-height: 50px;}
+.mainWrap .news-table-wrap table tbody td {text-indent: 15px;}
+.mainWrap .news-table-wrap table tbody .title {display: block;}
+.mainWrap .news-table-wrap table tbody .grayText {color: #999;}
+.mainWrap .news-table-wrap table tbody .gray {background-color: #F4F4F4;}
